@@ -2,7 +2,7 @@
 (function () {
     const typedText = document.querySelector('.typed-text');
     if (typedText) {
-        const texts = ['Passionate Enginnering Student', 'Full Stack Developer', 'Tech Explorer'];
+        const texts = ['Passionate Enginnering Student', 'Full Stack Developer', 'Tech Explorer' ,'Dedicated Learner'];
         let textIndex = 0;
         let charIndex = 0;
         let currentText = '';
