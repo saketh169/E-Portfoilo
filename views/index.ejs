@@ -1,5 +1,5 @@
+```ejs
 <%- include('partials/head', { title: 'My E-Portfolio - Home' }) %>
-<% /* EDIT: Replace 'Your Name' and contact info with your details */ %>
 <%- include('partials/nav') %>
 <%- include('partials/header') %>
 
@@ -11,52 +11,83 @@
             <p>A <span class="typed-text">Passionate </span></p>
             <a href="/contact" class="btn">Get in Touch</a>
         </div>
-        <div class="hero-image">
-           
-            
-          <img class="image-placeholder" src="images/profile.jpg" alt="Saketh Pabbu">
-                
-           
-        </div>
-    </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">Personal Information</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>About Me</h3>
-                   <p>Welcome to my portfolio! I’m a passionate Computer Science student driven to innovate through full-stack development, AI, and data science, with a goal to create impactful, scalable technology solutions.</p>
-                    <div class="personal-details">
-                       
-                        <div class="detail-item"><strong>Name:</strong> Saketh Pabbu</div>
-                        <div class="detail-item"><strong>Age:</strong> 19</div>
-                        <div class="detail-item"><strong>Location:</strong> Srinivasa Agraharam , Nellore , Andhra Pradesh , India , 524002</div>
-                        <div class="detail-item"><strong>Email:</strong> sakethrupa123@gmail.com</div>
-                        <div class="detail-item"><strong>Phone:</strong> 7075783143</div>
+        <div class="hero-visual">
+            <div class="hero-icon-container">
+                <div class="floating-icon">💻</div>
+                <div class="floating-icon">🚀</div>
+                <div class="floating-icon">⚡</div>
+                <div class="floating-icon">🎯</div>
+                <div class="floating-icon">🌟</div>
+            </div>
+            <div class="hero-graphic">
+                <div class="code-snippet">
+                    <div class="code-line">
+                        <span class="code-keyword">const</span> 
+                        <span class="code-variable">developer</span> = {
                     </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <img class="image-placeholder" src="images/profile.jpg" alt="Saketh Pabbu">
-                        <p>Profile Photo</p>
+                    <div class="code-line indent">
+                        <span class="code-property">name:</span> 
+                        <span class="code-string">"Saketh Pabbu"</span>,
                     </div>
+                    <div class="code-line indent">
+                        <span class="code-property">passion:</span> 
+                        <span class="code-string">"Full-Stack Development"</span>,
+                    </div>
+                    <div class="code-line indent">
+                        <span class="code-property">skills:</span> 
+                        <span class="code-string">["React", "Node.js", "Python"]</span>
+                    </div>
+                    <div class="code-line">};</div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="reflections" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Personal Statement</h2>
-            <div class="reflection-content">
-            <p>I'm a third-year Computer Science student passionate about building innovative tech solutions and actively exploring <strong>AI</strong>, <strong>machine learning</strong>, and <strong>data science</strong>.</p>
-           <p>As a passionate <strong>Computer Science student</strong>, I am driven by a love for creating impactful technology through <strong>web development, data science, and machine learning</strong>. My proficiency in <strong>Java, C, and Python</strong> has been sharpened by solving over 300 algorithmic challenges on LeetCode and competing in CodeChef and HackerRank contests. I excel at building <strong>user-friendly web applications</strong> using the MERN stack, supported by a deep understanding of data structures, algorithms, and tools like <strong>Numpy, Pandas, and Tailwind CSS</strong>. Leading innovative projects, such as the <strong>AI-Powered Intelligent Document Management System</strong>—which secured 1st Runner-Up at the Agentica AI Hackathon 2025—has fueled my ambition to push technological boundaries.</p>
-           <p>I thrive on <strong>collaboration and continuous learning</strong>, leveraging my leadership, analytical, and communication skills to drive projects forward. My academic projects, including the <strong>Unmanned Vehicle Scheduling System</strong> and the <strong>Nutri Connect Web Application</strong>, demonstrate my ability to blend technical expertise with real-world applications. </p>
-           <p>With a strong foundation in <strong>CS fundamentals</strong> and a commitment to innovation, I aim to contribute to cutting-edge projects in data science and machine learning, creating technology that makes a meaningful difference in the world.</p>
-         </div>
-    </section>
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">Personal Information</h2>
+        <div class="about-content">
+           
+            <div class="about-text">
+                <h3>About Me</h3>
+                <p>Welcome to my portfolio! I'm a passionate Computer Science student driven to innovate through full-stack development, AI, and data science, with a goal to create impactful, scalable technology solutions. I am currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Engineering in my third year, actively honing my skills through academic projects, internships, and competitive programming.</p>
+                <div class="personal-details">
+                    <div class="detail-item"><strong>Name:</strong> Saketh Pabbu</div>
+                    <div class="detail-item"><strong>Age:</strong> 19 Years</div>
+                    <div class="detail-item"><strong>Location:</strong> Srinivasa Agraharam, Nellore, Andhra Pradesh, India, 524002 </div>
+                    <div class="detail-item"><strong>Email:</strong> sakethrupa123@gmail.com</div>
+                    <div class="detail-item"><strong>Phone:</strong> 7075783143</div>
+                    <div class="detail-item"><strong>Education:</strong> B.Tech in Computer Science and Engineering (UG-3)</div>
+                    <div class="detail-item"><strong>Current Status:</strong> Student at Indian Institute of Information Technology SriCity, Actively Seeking Internship Opportunities</div>
+                </div>
+            </div>
+            <div class="image-placeholder">
+                <img class="image-placeholder" src="images/profile.jpg" alt="Saketh Pabbu">    
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="reflections" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Personal Statement</h2>
+        <div class="reflection-content">
+            <ul>
+                <li><p>I'm a third-year Computer Science student passionate about building innovative tech solutions and actively exploring <strong>AI</strong>, <strong>machine learning</strong>, and <strong>data science</strong>.</p></li>
+                <li> 
+                    <p>As a passionate <strong>Computer Science student</strong>, I am driven by a love for creating impactful technology through <strong>web development, data science, and machine learning</strong>. My proficiency in <strong>Java, C, and Python</strong> has been sharpened by solving over 300 algorithmic challenges on LeetCode and competing in CodeChef and HackerRank contests. I excel at building <strong>user-friendly web applications</strong> using the MERN stack, supported by a deep understanding of data structures, algorithms, and tools like <strong>Numpy, Pandas, and Tailwind CSS</strong>. Leading innovative projects, such as the <strong>AI-Powered Intelligent Document Management System</strong>—which secured 1st Runner-Up at the Agentica AI Hackathon 2025—has fueled my ambition to push technological boundaries.</p>
+                </li>
+                <li> 
+                    <p>I thrive on <strong>collaboration and continuous learning</strong>, leveraging my leadership, analytical, and communication skills to drive projects forward. My academic projects, including the <strong>Unmanned Vehicle Scheduling System</strong> and the <strong>Nutri Connect Web Application</strong>, demonstrate my ability to blend technical expertise with real-world applications.</p>
+                </li>
+                <li>
+                    <p>With a strong foundation in <strong>CS fundamentals</strong> and a commitment to innovation, I aim to contribute to cutting-edge projects in data science and machine learning, creating technology that makes a meaningful difference in the world.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 <%- include('partials/footer') %>
-
+```

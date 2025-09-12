@@ -45,7 +45,7 @@ app.get('/contact', (req, res) => {
 });
 
 // Start server
-const PORT = process.env.PORT || 6200;
+const PORT = process.env.PORT || 6400;
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);

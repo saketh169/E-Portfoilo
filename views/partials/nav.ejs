@@ -1,7 +1,12 @@
 <nav id="navbar">
     <div class="container">
         <h1 class="logo">My Portfolio</h1>
-        <ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
             <li><a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>">Home</a></li>
             <li><a href="/education" class="<%= currentPage === 'education' ? 'active' : '' %>">Education</a></li>
             <li><a href="/experience" class="<%= currentPage === 'experience' ? 'active' : '' %>">Experience</a></li>

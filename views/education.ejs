@@ -1,8 +1,7 @@
 <%- include('partials/head', { title: 'My E-Portfolio - Education & Skills' }) %>
-<% /* Updated with real education timeline and categorized skills */ %>
+<% /* Updated with real education timeline, categorized skills, and detailed descriptions */ %>
 <%- include('partials/nav') %>
 <%- include('partials/header') %>
-
 
 <section id="education" class="section bg-light">
     <div class="container">
@@ -12,24 +11,27 @@
                 <div class="timeline-date">Aug 2023 - Jun 2027</div>
                 <div class="timeline-content">
                     <h3>Bachelor of Technology - BTech, Computer Science</h3>
-                    <h4>Indian Institute of Information Technology, SriCity</h4>
-                    <p>CGPA: 9.46. Studying advanced topics in <strong>Data Structures</strong>, <strong>Algorithms</strong>, <strong>Full-Stack Development</strong>, and <strong>Database Systems</strong>. Active in competitive programming and tech events.</p>
+                    <h4><span class="subtitle">College:</span> Indian Institute of Information Technology, SriCity</h4>
+                    <p><span class="subtitle">Grade:</span> CGPA: 9.46</p>
+                    <p><span class="subtitle">Description:</span> Actively learning and growing every day through advanced concepts in <strong>Data Structures</strong>, <strong>Algorithms</strong>, <strong>Full-Stack Development</strong>, and <strong>Database Systems</strong>. Engaged in competitive programming and tech events to enhance practical skills.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-date">Jun 2021 - Jun 2023</div>
                 <div class="timeline-content">
                     <h3>Intermediate / 12th Grade</h3>
-                    <h4>Narayana Junior College, India</h4>
-                    <p>Grade: 9.84. Excelled in Mathematics, Physics, and Chemistry, building a strong foundation for computer science.</p>
+                    <h4><span class="subtitle">College:</span> Narayana Junior College, India</h4>
+                    <p><span class="subtitle">Grade:</span> 9.84</p>
+                    <p><span class="subtitle">Description:</span> Excelled in <strong>Mathematics</strong>, <strong>Physics</strong>, and <strong>Chemistry</strong>, actively solving complex problems to build a strong foundation for computer science. Dedicated significant time preparing for competitive exams like JEE and EAMCET, honing analytical and problem-solving skills.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-date">Jun 2010 - Jun 2020</div>
                 <div class="timeline-content">
                     <h3>10th Grade</h3>
-                    <h4>Sri Netaji M.S.R Pilot High School</h4>
-                    <p>Grade: 10. Developed a passion for science and technology, participating in school-level coding and science projects.</p>
+                    <h4><span class="subtitle">College:</span> Sri Netaji M.S.R Pilot High School</h4>
+                    <p><span class="subtitle">Grade:</span> 10</p>
+                    <p><span class="subtitle">Description:</span> Studied at a reputed school and developed a strong foundation with great knowledge in <strong>Mathematics</strong>, <strong>Physics</strong>, <strong>Biology</strong>, and <strong>Social Studies</strong>. Participated in school-level coding and science projects, fostering a passion for science and technology.</p>
                 </div>
             </div>
         </div>
@@ -42,86 +44,119 @@
         <div class="skills-container">
             <div class="skill-category">
                 <h3>Programming</h3>
-                <div class="skill-item">
-                    <p><strong>Java</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>C</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>Python</strong></p>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <div class="skill-icon">☕</div>
+                        <span class="skill-name">Java</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">⚙️</div>
+                        <span class="skill-name">C</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">🐍</div>
+                        <span class="skill-name">Python</span>
+                    </div>
                 </div>
             </div>
             <div class="skill-category">
                 <h3>Web Development</h3>
-                <div class="skill-item">
-                    <p><strong>HTML</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>CSS</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>JavaScript</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>EJS</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>MySQL</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>MERN Stack</strong></p>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <div class="skill-icon">🌐</div>
+                        <span class="skill-name">HTML</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">🎨</div>
+                        <span class="skill-name">CSS</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">⚡</div>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">📄</div>
+                        <span class="skill-name">EJS</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">🗄️</div>
+                        <span class="skill-name">MySQL</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">⚛️</div>
+                        <span class="skill-name">MERN Stack</span>
+                    </div>
                 </div>
             </div>
             <div class="skill-category">
                 <h3>Tools & Platforms</h3>
-                <div class="skill-item">
-                    <p><strong>Linux</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>Git</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>GitHub</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>Matlab</strong></p>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <div class="skill-icon">🐧</div>
+                        <span class="skill-name">Linux</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">📋</div>
+                        <span class="skill-name">Git</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">🐙</div>
+                        <span class="skill-name">GitHub</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">📊</div>
+                        <span class="skill-name">Matlab</span>
+                    </div>
                 </div>
             </div>
             <div class="skill-category">
                 <h3>Libraries & Frameworks</h3>
-                <div class="skill-item">
-                    <p><strong>NumPy</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>Pandas</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>Matplotlib</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>Seaborn</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>Bootstrap CSS</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>Tailwind CSS</strong></p>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <div class="skill-icon">🔢</div>
+                        <span class="skill-name">NumPy</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">🐼</div>
+                        <span class="skill-name">Pandas</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">📈</div>
+                        <span class="skill-name">Matplotlib</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">📊</div>
+                        <span class="skill-name">Seaborn</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">🎯</div>
+                        <span class="skill-name">Bootstrap CSS</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">💨</div>
+                        <span class="skill-name">Tailwind CSS</span>
+                    </div>
                 </div>
             </div>
             <div class="skill-category">
                 <h3>CS Fundamentals</h3>
-                <div class="skill-item">
-                    <p><strong>Operating Systems</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>Object-Oriented Programming</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>Database Management Systems</strong></p>
-                </div>
-                <div class="skill-item">
-                    <p><strong>Computer Networking</strong></p>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <div class="skill-icon">💻</div>
+                        <span class="skill-name">Operating Systems</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">🏗️</div>
+                        <span class="skill-name">Object-Oriented Programming</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">🗃️</div>
+                        <span class="skill-name">Database Management Systems</span>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-icon">🌐</div>
+                        <span class="skill-name">Computer Networking</span>
+                    </div>
                 </div>
             </div>
             <div class="skill-category">
