@@ -416,9 +416,22 @@ footer::before {
 
 /* About */
 .about-content {
-    display: flex;
+      display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns for text and image */
     align-items: center;
     gap: 50px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr; /* Ensure single column layout */
+        gap: 20px;
+        padding: 20px;
+        max-width: 100%; /* Full width on small screens */
+    }
 }
 
 .about-text {
