@@ -36,16 +36,16 @@ body {
 }
 
 /* Footer */
-footer {
+.site-footer {
     background: linear-gradient(135deg, var(--dark-color) 0%, var(--primary-color) 100%);
     color: white;
-    padding: 40px 0;
-    margin-top: 50px;
+    padding: 60px 0 0;
+    margin-top: 80px;
     position: relative;
     overflow: hidden;
 }
 
-footer::before {
+.site-footer::before {
     content: '';
     position: absolute;
     top: 0;
@@ -56,19 +56,179 @@ footer::before {
     opacity: 0.3;
 }
 
-.footer-container {
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
+.footer-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    margin-bottom: 50px;
     position: relative;
     z-index: 2;
 }
 
-.footer-container p {
-    font-size: 1.1rem;
-    font-weight: 500;
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--secondary-color);
+    border-radius: 2px;
+}
+
+/* Quick Links */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-nav li {
+    margin-bottom: 12px;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+}
+
+.footer-link:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+.footer-link::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.footer-link:hover::before {
+    width: 10px;
+}
+
+/* About Section */
+.footer-about p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* Contact Section */
+.footer-contact {
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: var(--transition);
+}
+
+.contact-item:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+.contact-item i {
+    margin-right: 12px;
+    color: var(--secondary-color);
+    width: 20px;
+    font-size: 1rem;
+}
+
+.contact-item span {
+    font-size: 0.95rem;
+}
+
+/* Social Media */
+.footer-social h5 {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: var(--transition);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.social-link:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px) scale(1.1);
+    border-color: var(--secondary-color);
+    box-shadow: 0 8px 20px rgba(157, 78, 221, 0.3);
+}
+
+.social-link i {
+    font-size: 1.2rem;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-bottom-content {
+    text-align: center;
+}
+
+.footer-bottom-content p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-tagline {
+    font-style: italic;
+    color: var(--secondary-color) !important;
+    font-weight: 500;
 }
 
 .section {
@@ -1248,5 +1408,37 @@ footer::before {
 
     .skill-name {
         font-size: 0.7rem;
+    }
+    
+    /* Footer responsive styles */
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .contact-item {
+        justify-content: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .footer-nav ul {
+        text-align: center;
+    }
+    
+    .footer-link:hover {
+        transform: none;
+    }
+    
+    .contact-item:hover {
+        transform: none;
     }
 }
