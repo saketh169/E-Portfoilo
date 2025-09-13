@@ -15,6 +15,7 @@ app.use((req, res, next) => {
     const path = req.path.toLowerCase();
     let currentPage = 'home'; // Default to home
     if (path.startsWith('/education')) currentPage = 'education';
+    else if (path.startsWith('/skills')) currentPage = 'skills';
     else if (path.startsWith('/experience')) currentPage = 'experience';
     else if (path.startsWith('/achievements')) currentPage = 'achievements';
     else if (path.startsWith('/contact')) currentPage = 'contact';
@@ -29,7 +30,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/education', (req, res) => {
-    res.render('education', { title: 'My E-Portfolio - Education & Skills', currentPage: res.locals.currentPage });
+    res.render('education', { title: 'My E-Portfolio - Education', currentPage: res.locals.currentPage });
+});
+
+app.get('/skills', (req, res) => {
+    res.render('skills', { title: 'My E-Portfolio - Skills', currentPage: res.locals.currentPage });
 });
 
 app.get('/experience', (req, res) => {
